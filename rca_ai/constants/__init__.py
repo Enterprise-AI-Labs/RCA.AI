@@ -1,0 +1,1 @@
+from .constants import APP_ASSETS_DIR
