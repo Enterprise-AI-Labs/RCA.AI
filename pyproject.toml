@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rca_ai"
+version = "0.0.1"
+authors = [
+  { name = "", email = "" },
+]
+description = "root cause analyis using AI"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.optional-dependencies]
+dev = [
+  "black>=23.3.0",
+  "mypy==1.5.1",
+]
+
+[project.urls]
+"Homepage" = ""
+"Bug Tracker" = ""
+
+[tool.setuptools]
+py-modules = ["rca_ai"]
