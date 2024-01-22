@@ -9,15 +9,15 @@ class LogContent:
         self.structured = None
 
 class LogSignature:
-    def __init__(self, log_file: LiteralString) -> None:
+    def __init__(self, log_filepath: LiteralString) -> None:
         self.sign = None
 
 class Log:
-    def __init__(self, log_filename: LiteralString) -> None:
-        self.filename: LiteralString = log_filename
+    def __init__(self, log_filepath: LiteralString) -> None:
+        self.filename: LiteralString = log_filepath
         self.matched_keywords_filename: List[LiteralString] = []
         self.log_content: LogContent = None
-        self.matched_signatures: List[LogSignature] = {}
+        self.matched_signatures: List[LogSignature] = []
 
 
     
